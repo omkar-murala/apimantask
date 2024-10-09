@@ -45,7 +45,7 @@ function Page() {
         <CardHeader className="text-center font-bold text-lg text-black">Log In</CardHeader>
         <CardContent>
           <label className="block mb-2">
-            <span className="font-extralight text-sm text-gray-600">Enter Your Email</span>
+            <span className="font-extralight text-sm text-black">Enter Your Email</span>
             <Input
               placeholder="Email"
               type="email"
@@ -54,7 +54,7 @@ function Page() {
               onChange={(e) => setEmail(e.target.value)}
             />
           </label>
-          <label className="block mb-2 font-extralight text-sm text-gray-600"> Enter OTP</label>
+          <label className="block mb-2 font-extralight text-sm text-black"> Enter OTP</label>
           <InputOTP maxLength={4} className="w-full flex justify-between mb-3">
             <InputOTPGroup className="gap-2">
               <InputOTPSlot index={0} className="w-12 h-12 text-center border border-gray-300 rounded-md" />
