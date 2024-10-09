@@ -2,18 +2,18 @@
 
 import { Button } from "@/components/ui/button";
 import {
-  InputOTP,
-  InputOTPGroup,
-  InputOTPSlot,
+    InputOTP,
+    InputOTPGroup,
+    InputOTPSlot,
 } from "@/components/ui/input-otp";
 import Link from "next/link";
 import { useState } from "react";
 
 import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
+    Card,
+    CardContent,
+    CardFooter,
+    CardHeader,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 
@@ -42,7 +42,7 @@ function Page() {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100 px-4">
       <Card className="w-full max-w-md p-4 rounded-lg shadow-lg bg-white">
-        <CardHeader className="text-center font-bold text-lg text-gray-700">Log In</CardHeader>
+        <CardHeader className="text-center font-bold text-lg text-black">Log In</CardHeader>
         <CardContent>
           <label className="block mb-2">
             <span className="font-extralight text-sm text-gray-600">Enter Your Email</span>

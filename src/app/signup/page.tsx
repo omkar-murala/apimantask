@@ -116,7 +116,7 @@ function Page() {
     <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-100">
       <Card className="w-full max-w-md lg:max-w-lg xl:max-w-xl bg-white rounded-lg shadow-lg">
         <CardHeader>
-          <CardTitle className="text-center text-xl lg:text-2xl font-semibold text-gray-700">Register</CardTitle>
+          <CardTitle className="text-center text-xl lg:text-2xl font-semibold text-black">Register</CardTitle>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -192,7 +192,7 @@ function Page() {
       {showDialog && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4">
           <div className="bg-white p-6 rounded-lg shadow-lg max-w-md">
-            <h2 className="text-xl lg:text-2xl font-semibold text-gray-700">Congratulations, {submittedName}!</h2>
+            <h2 className="text-xl lg:text-2xl font-semibold text-black">Congratulations, {submittedName}!</h2>
             <p className="text-sm lg:text-base text-gray-600">You have successfully registered. Would you like to login now?</p>
             <div className="flex justify-between mt-4">
               <Button onClick={handleLoginNow} className="mr-2 w-full max-w-[150px] bg-blue-600 text-white hover:bg-blue-700">
