@@ -2,11 +2,11 @@
 
 import { Button } from "@/components/ui/button";
 import {
-    Card,
-    CardContent,
-    CardFooter,
-    CardHeader,
-    CardTitle,
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
@@ -204,7 +204,7 @@ function Page() {
           </div>
         </div>
       )}
-      {/* Media query to ensure black text color on mobile */}
+      
       <style jsx>{`
         @media (max-width: 640px) {
           input {
