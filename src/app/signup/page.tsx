@@ -15,7 +15,6 @@ import React, { useState } from "react";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
-
 function Page() {
   const router = useRouter(); 
   const [date, setDate] = useState<Date | null>(null);
@@ -205,6 +204,14 @@ function Page() {
           </div>
         </div>
       )}
+      {/* Media query to ensure black text color on mobile */}
+      <style jsx>{`
+        @media (max-width: 640px) {
+          input {
+            color: black !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }

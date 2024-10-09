@@ -2,18 +2,18 @@
 
 import { Button } from "@/components/ui/button";
 import {
-    InputOTP,
-    InputOTPGroup,
-    InputOTPSlot,
+  InputOTP,
+  InputOTPGroup,
+  InputOTPSlot,
 } from "@/components/ui/input-otp";
 import Link from "next/link";
 import { useState } from "react";
 
 import {
-    Card,
-    CardContent,
-    CardFooter,
-    CardHeader,
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 
@@ -88,6 +88,16 @@ function Page() {
           </Link>
         </CardFooter>
       </Card>
+
+      {/* Media query for mobile screens */}
+      <style jsx>{`
+        @media (max-width: 640px) {
+          input,
+          .w-12 {
+            color: black !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }
