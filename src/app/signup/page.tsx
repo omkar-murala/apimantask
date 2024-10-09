@@ -2,11 +2,11 @@
 
 import { Button } from "@/components/ui/button";
 import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
+    Card,
+    CardContent,
+    CardFooter,
+    CardHeader,
+    CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
@@ -112,7 +112,7 @@ function Page() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-100">
+    <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-black-500">
       <Card className="w-full max-w-md lg:max-w-lg xl:max-w-xl bg-white rounded-lg shadow-lg">
         <CardHeader>
           <CardTitle className="text-center text-xl lg:text-2xl font-semibold text-black">Register</CardTitle>
@@ -124,7 +124,7 @@ function Page() {
                 Enter Your Name    
               </span>
               <Input 
-                className="mt-1 mb-3 w-full border border-gray-300 rounded-md px-3 py-2" 
+                className="mt-1 mb-3 w-full border border-black-300 rounded-md px-3 py-2" 
                 placeholder="Name" 
                 type="text" 
                 value={name} 
@@ -136,7 +136,7 @@ function Page() {
             <label htmlFor="email" className="block">
               <span className="font-extralight text-sm lg:text-base text-black">Enter Your Email</span>
               <Input 
-                className="mb-3 w-full border border-gray-300 rounded-md px-3 py-2" 
+                className="mb-3 w-full border border-black-300 rounded-md px-3 py-2" 
                 placeholder="Email" 
                 type="email" 
                 value={email} 
@@ -149,7 +149,7 @@ function Page() {
               <span className="font-extralight text-sm lg:text-base text-black">Enter Your Phone No.</span>
               <Input 
                 id="phone" 
-                className="mb-3 w-full border border-gray-300 rounded-md px-3 py-2" 
+                className="mb-3 w-full border border-black-300 rounded-md px-3 py-2" 
                 placeholder="Phone No." 
                 type="tel"  
                 inputMode="numeric" 
@@ -170,7 +170,7 @@ function Page() {
                 scrollableYearDropdown
                 yearDropdownItemNumber={100}
                 placeholderText="Select date"
-                className="mt-1 mb-3 w-full border border-gray-300 rounded-md px-3 py-2"
+                className="mt-1 mb-3 w-full border border-black-300 rounded-md px-3 py-2"
               />
               {errors.date && <p className="text-red-500 text-sm lg:text-base">{errors.date}</p>}
             </label>
@@ -197,7 +197,7 @@ function Page() {
               <Button onClick={handleLoginNow} className="mr-2 w-full max-w-[150px] bg-blue-600 text-white hover:bg-blue-700">
                 Login Now
               </Button>
-              <Button onClick={handleExit} className="w-full max-w-[150px] bg-gray-500 text-white hover:bg-gray-600">
+              <Button onClick={handleExit} className="w-full max-w-[150px] bg-black-500 text-white hover:bg-black-600">
                 Exit
               </Button>
             </div>

@@ -40,7 +40,7 @@ function Page() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100 px-4">
+    <div className="flex flex-col items-center justify-center h-screen bg-black-500 px-4">
       <Card className="w-full max-w-md p-4 rounded-lg shadow-lg bg-white">
         <CardHeader className="text-center font-bold text-lg text-black">Log In</CardHeader>
         <CardContent>
@@ -49,7 +49,7 @@ function Page() {
             <Input
               placeholder="Email"
               type="email"
-              className="mb-3 border border-gray-300 rounded-md px-3 py-2 w-full"
+              className="mb-3 border border-black-300 rounded-md px-3 py-2 w-full"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -57,10 +57,10 @@ function Page() {
           <label className="block mb-2 font-extralight text-sm text-black"> Enter OTP</label>
           <InputOTP maxLength={4} className="w-full flex justify-between mb-3">
             <InputOTPGroup className="gap-2">
-              <InputOTPSlot index={0} className="w-12 h-12 text-center border border-gray-300 rounded-md" />
-              <InputOTPSlot index={1} className="w-12 h-12 text-center border border-gray-300 rounded-md" />
-              <InputOTPSlot index={2} className="w-12 h-12 text-center border border-gray-300 rounded-md" />
-              <InputOTPSlot index={3} className="w-12 h-12 text-center border border-gray-300 rounded-md" />
+              <InputOTPSlot index={0} className="w-12 h-12 text-center border border-black-300 rounded-md" />
+              <InputOTPSlot index={1} className="w-12 h-12 text-center border border-black-300 rounded-md" />
+              <InputOTPSlot index={2} className="w-12 h-12 text-center border border-black-300 rounded-md" />
+              <InputOTPSlot index={3} className="w-12 h-12 text-center border border-black-300 rounded-md" />
             </InputOTPGroup>
           </InputOTP>
           {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
