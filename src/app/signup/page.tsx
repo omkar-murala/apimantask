@@ -197,7 +197,7 @@ function Page() {
               <Button onClick={handleLoginNow} className="mr-2 w-full max-w-[150px] bg-blue-600 text-white hover:bg-blue-700">
                 Login Now
               </Button>
-              <Button onClick={handleExit} className="w-full max-w-[150px] bg-black-500 text-white hover:bg-black-600">
+              <Button onClick={handleExit} className="w-full max-w-[150px] bg-black-500 text-red hover:bg-black-600">
                 Exit
               </Button>
             </div>
